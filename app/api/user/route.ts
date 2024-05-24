@@ -9,8 +9,8 @@ export function GET(req: NextResponse) {
 
 export async function POST(req: NextResponse) {
     const body = await req.json();
-    
+
     return NextResponse.json({
-        message: "I am signed In"
+        body
     })
 }
